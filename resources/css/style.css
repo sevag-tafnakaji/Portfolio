@@ -23,8 +23,12 @@ nav {
     color: black;
 }
 
+.navbar a:hover {
+    color: red;
+}
+
 .top h1{
-    background-color: rgba(235, 228, 195, 0.6);
+    background-color: rgba(158, 130, 0, 0.6);
     margin: 0;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -78,18 +82,24 @@ nav {
     width: auto;
 }
 
-.skill span {
+.skills-description {
     height: 150px;
     text-align: center;
     min-width: 240px;
-    font-weight: bold;
     padding: 5px;
-    background-color:rgba(235, 228, 195, 0.6);
+    background-color:rgba(158, 130, 0, 0.6);
+}
 
+.skills-description span {
+    font-weight: bold;
+}
+
+.skills-description p {
+    font-size: 1rem;
 }
 
 .projects {
-    background-color: rgba(235, 228, 195, 0.6);
+    background-color: rgba(158, 130, 0, 0.6);
     padding: 35px 0;
     margin: 50px 0;
 }
@@ -115,7 +125,7 @@ nav {
 
 .contact{
     width: 100%;
-    background-color: rgba(235, 228, 195, 0.6);
+    background-color: rgba(158, 130, 0, 0.6);
 }
 
 .contact section {
@@ -135,4 +145,23 @@ nav {
 
 .contact img{
     width: 40px;
+}
+
+@media only screen and (max-width:500px) {
+    .skills {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template: repeat(2, 1fr) / 1fr;
+        grid-auto-flow: 200px / 200px;
+        margin-right: 40px;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+
 }
